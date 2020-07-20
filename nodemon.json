@@ -1,0 +1,20 @@
+{
+    
+    "helphttp":"https://github.com/remy/nodemon/blob/master/doc/sample-nodemon.md",
+
+    "restartable":"rs" ,
+    
+    "ignore":[
+        ".git",
+        "node_modules/**"
+    ],
+
+    "verbose":true,
+
+    "watch":[
+        "lib/",
+        "views"
+    ],
+
+    "ext":"js.json,ejs"
+}

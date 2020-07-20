@@ -1,0 +1,41 @@
+{
+  "name": "Homework",
+  "version": "1.0.0",
+  "description": "Advanced React",
+  "main": "lib/server.js",
+  "author": "Sam Niyazi",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev-hold": "nodemon lib/server.js  --watch lib  --watch views -e ejs,js",
+    "dev_hold2": "nodemon lib/server.js  ",
+    "dev": "nodemon  --exec babel-node  lib/server.js  "
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.5.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1"
+  }
+}
