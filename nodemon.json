@@ -12,9 +12,9 @@
     "verbose":true,
 
     "watch":[
-        "lib/",
+        "lib",
         "views"
     ],
 
-    "ext":"js.json,ejs"
+    "ext":"js,json,ejs"
 }
