@@ -9,7 +9,7 @@ const config = {
         'babel-polyfill',
         './lib/components/index.js'
     ]
-        ,
+    ,
     output: {
         path: path.resolve(__dirname, 'public'),
         filename: 'bundle.js'
@@ -18,9 +18,10 @@ const config = {
     ,
     module: {
         rules: [
-            { test: /\.js|jsx$/, use: 'babel-loader',
-            exclude: /node_modules/
-         }
+            {
+                test: /\.js|jsx$/, use: 'babel-loader',
+                exclude: /node_modules/
+            }
         ]
     }
 };

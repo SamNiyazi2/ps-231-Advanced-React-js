@@ -5,7 +5,7 @@ Rem 07/20/2020 12:51 pm - SSN - [20200720-0738] - [005] - M03 - Full-stack JavaS
 
 set custom_site_port=3114
 
-call C:\sams\ps\KillProcess\KillProcess_Using_PortNo.cmd %site_port%
+call C:\sams\ps\KillProcess\KillProcess_Using_PortNo.cmd %custom_site_port%
 
 
 cd %~dp0
