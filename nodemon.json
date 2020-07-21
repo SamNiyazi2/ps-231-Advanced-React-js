@@ -16,5 +16,5 @@
         "views"
     ],
 
-    "ext":"js,json,ejs"
+    "ext":"js,ejs"
 }
