@@ -12,6 +12,7 @@ cd %~dp0
 
 rem start "ps-advanced-react web server" node lib/server.js
 start "ps-advanced-react web server - yarn webpack" yarn webpack
+start "ps-advanced-react web server - yarn test" yarn test
 start "ps-advanced-react web server - yarn dev" yarn dev
 
 start "ps-advanced-react web page" ssn_run.cmd

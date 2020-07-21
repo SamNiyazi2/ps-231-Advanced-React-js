@@ -10,7 +10,8 @@
     "dev-hold": "nodemon lib/server.js  --watch lib  --watch views -e ejs,js",
     "dev_hold2": "nodemon lib/server.js  ",
     "dev": "nodemon  --exec babel-node  lib/server.js  ",
-    "webpack": "webpack -wd"
+    "webpack": "webpack -wd",
+    "test": "jest --watch"
   },
   "babel": {
     "presets": [
@@ -41,6 +42,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "ejs": "^3.1.3",
     "express": "^4.17.1",
+    "jest": "20",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "webpack": "^4.43.0"
