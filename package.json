@@ -9,7 +9,7 @@
   "scripts": {
     "dev-hold": "nodemon lib/server.js  --watch lib  --watch views -e ejs,js",
     "dev_hold2": "nodemon lib/server.js  ",
-    "dev": "nodemon  --exec babel-node  lib/server.js  ",
+    "dev": "set NODE_PATH=./lib && nodemon  --exec babel-node  lib/server.js  ",
     "webpack": "webpack -wd",
     "test": "jest --watch"
   },

@@ -7,7 +7,7 @@ const config = {
 
     entry: [
         'babel-polyfill',
-        './lib/components/index.js'
+        './lib/renderers/dom.js'
     ]
 
     ,
