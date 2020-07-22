@@ -16,5 +16,9 @@
         "views"
     ],
 
-    "ext":"js,ejs"
+    "ext":"js,ejs",
+
+    "events": {
+        "start": "echo %time%  --- ssn-20200722-1429"
+      }
 }
