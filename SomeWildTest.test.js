@@ -3,14 +3,14 @@
 
 
 
-describe ('Test in the wild', () => {
+describe ('File name ending with test.js', () => {
 
-    it ( 'should show up regardless where is at', ()=> {
+    it ( 'should show up regardless where it is located', ()=> {
 
         let value1 = '101';
 
         expect( value1).toBe('101');
-    })
+    });
 
 });
 
