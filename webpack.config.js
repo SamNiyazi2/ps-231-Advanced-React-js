@@ -3,7 +3,7 @@
 
 const path = require('path');
 
-const config = {
+const base_Config = {
 
     resolve: {
         modules:
@@ -11,21 +11,6 @@ const config = {
                 path.resolve('./lib'),
                 path.resolve('./node_modules')
             ]
-    }
-
-    ,
-
-    entry: [
-        'babel-polyfill',
-        './lib/renderers/dom.js'
-    ]
-
-    ,
-
-    output: {
-        path: path.resolve(__dirname, 'public'),
-        filename: 'bundle.js'
-
     }
 
     ,
@@ -44,6 +29,55 @@ const config = {
 
 
 };
+
+
+
+const config = [
+
+    {
+
+        ...base_Config
+        ,
+
+        entry: [
+            'babel-polyfill',
+            './lib/renderers/dom.js'
+        ]
+
+        ,
+
+        output: {
+            path: path.resolve(__dirname, 'public'),
+            filename: 'bundle.js'
+
+        }
+
+    }
+
+    ,
+    {
+
+        ...base_Config
+        ,
+
+        entry: [
+            'babel-polyfill',
+            './lib/test_context/index.js'
+        ]
+
+        ,
+
+        output: {
+            path: path.resolve(__dirname, 'public'),
+            filename: 'bundle_101.js'
+
+        }
+
+    }
+
+
+];
+
 
 
 module.exports = config;

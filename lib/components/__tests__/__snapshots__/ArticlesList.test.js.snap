@@ -10,7 +10,9 @@ exports[`ArticlesList renders correctly 1`] = `
           "paddingTop": 32,
         }
       }
-    />
+    >
+      Title 101
+    </div>
     <div
       style={
         Object {
@@ -43,7 +45,9 @@ exports[`ArticlesList renders correctly 1`] = `
           "paddingLeft": 20,
         }
       }
-    />
+    >
+      Body 101
+    </div>
   </div>
   <div>
     <div
@@ -53,7 +57,9 @@ exports[`ArticlesList renders correctly 1`] = `
           "paddingTop": 32,
         }
       }
-    />
+    >
+      Title 102
+    </div>
     <div
       style={
         Object {
@@ -86,7 +92,9 @@ exports[`ArticlesList renders correctly 1`] = `
           "paddingLeft": 20,
         }
       }
-    />
+    >
+      Body 102
+    </div>
   </div>
 </div>
 `;
