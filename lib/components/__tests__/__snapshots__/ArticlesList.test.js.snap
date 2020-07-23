@@ -1,100 +1,190 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ArticlesList renders correctly 1`] = `
-<div>
-  <div>
-    <div
-      style={
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticlesList
+    articles={
         Object {
-          "fontWeight": "bold",
-          "paddingTop": 32,
-        }
-      }
-    >
-      Title 101
-    </div>
-    <div
-      style={
+            "a": Object {
+              "body": "Body 101",
+              "date": "",
+              "id": "a",
+              "title": "Title 101",
+            },
+            "b": Object {
+              "body": "Body 102",
+              "date": "",
+              "id": "b",
+              "title": "Title 102",
+            },
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Article
+          article={
+                    Object {
+                              "body": "Body 101",
+                              "date": "",
+                              "id": "a",
+                              "title": "Title 101",
+                            }
+          }
+/>,
+        <Article
+          article={
+                    Object {
+                              "body": "Body 102",
+                              "date": "",
+                              "id": "b",
+                              "title": "Title 102",
+                            }
+          }
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "a",
+        "nodeType": "function",
+        "props": Object {
+          "article": Object {
+            "body": "Body 101",
+            "date": "",
+            "id": "a",
+            "title": "Title 101",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "b",
+        "nodeType": "function",
+        "props": Object {
+          "article": Object {
+            "body": "Body 102",
+            "date": "",
+            "id": "b",
+            "title": "Title 102",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Article
+            article={
+                        Object {
+                                    "body": "Body 101",
+                                    "date": "",
+                                    "id": "a",
+                                    "title": "Title 101",
+                                  }
+            }
+/>,
+          <Article
+            article={
+                        Object {
+                                    "body": "Body 102",
+                                    "date": "",
+                                    "id": "b",
+                                    "title": "Title 102",
+                                  }
+            }
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
         Object {
-          "color": "#888",
-          "fontSize": "0.8em",
-        }
-      }
-    >
-      Invalid Date
-    </div>
-    <div
-      style={
+          "instance": null,
+          "key": "a",
+          "nodeType": "function",
+          "props": Object {
+            "article": Object {
+              "body": "Body 101",
+              "date": "",
+              "id": "a",
+              "title": "Title 101",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
-          "paddingBottom": 10,
-          "paddingTop": 10,
-        }
-      }
-    >
-      Author:  
-      <a
-        href="{author.website}"
-      >
-        SomeFirstName
-         
-      </a>
-    </div>
-    <div
-      style={
-        Object {
-          "paddingLeft": 20,
-        }
-      }
-    >
-      Body 101
-    </div>
-  </div>
-  <div>
-    <div
-      style={
-        Object {
-          "fontWeight": "bold",
-          "paddingTop": 32,
-        }
-      }
-    >
-      Title 102
-    </div>
-    <div
-      style={
-        Object {
-          "color": "#888",
-          "fontSize": "0.8em",
-        }
-      }
-    >
-      Invalid Date
-    </div>
-    <div
-      style={
-        Object {
-          "paddingBottom": 10,
-          "paddingTop": 10,
-        }
-      }
-    >
-      Author:  
-      <a
-        href="{author.website}"
-      >
-        SomeFirstName
-         
-      </a>
-    </div>
-    <div
-      style={
-        Object {
-          "paddingLeft": 20,
-        }
-      }
-    >
-      Body 102
-    </div>
-  </div>
-</div>
+          "instance": null,
+          "key": "b",
+          "nodeType": "function",
+          "props": Object {
+            "article": Object {
+              "body": "Body 102",
+              "date": "",
+              "id": "b",
+              "title": "Title 102",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenThreeAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
 `;
