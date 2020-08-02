@@ -11,7 +11,8 @@
     "dev_hold2": "nodemon lib/server.js  ",
     "dev": "set NODE_PATH=./lib && nodemon  --exec babel-node  lib/server.js  ",
     "webpack": "webpack -wd",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "verify-test": "jest --coverage"
   },
   "babel": {
     "presets": [

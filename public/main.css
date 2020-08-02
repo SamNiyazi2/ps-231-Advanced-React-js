@@ -8,3 +8,8 @@
 
     margin:20px;
 }
+
+.hovered {
+    background-color: lightskyblue;
+    text-decoration: none;
+}
