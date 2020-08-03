@@ -14,7 +14,9 @@
         "test": "jest --watch",
         "verify-test": "jest --coverage",
         "build-webpack": "webpack -p",
-        "build-node": "babel lib -d build --copy-files"
+        "build-node": "babel lib -d build --copy-files",
+        "start-prod": "set custom_site_port=3116 && set NODE_ENV=production && set NODE_PATH=./build && node  build/server.js  "
+
     },
     "babel_v01": {
         "presets": [
