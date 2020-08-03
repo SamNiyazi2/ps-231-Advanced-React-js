@@ -23,8 +23,17 @@ const base_Config = {
 
             {
                 test: /\.js|jsx$/,
-                use: 'babel-loader',
                 exclude: /node_modules/
+
+                //use: 'babel-loader'
+                ,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['react', 'env', 'stage-2']
+                    }
+                }
+
             }
         ]
     }

@@ -13,13 +13,31 @@
         "webpack": "webpack -wd",
         "test": "jest --watch",
         "verify-test": "jest --coverage",
-        "build-webpack": "webpack -p"
+        "build-webpack": "webpack -p",
+        "build-node": "babel lib -d build --copy-files"
     },
-    "babel": {
+    "babel_v01": {
         "presets": [
             "react",
             "env",
             "stage-2"
+        ]
+    },
+    "babel": {
+        "presets": [
+            "react",
+            [
+                "env",
+                {
+                    "targets": {
+                        "node": "current"
+                    }
+                }
+            ]
+        ],
+        "plugins": [
+            "transform-class-properties",
+            "transform-object-rest-spread"
         ]
     },
     "devDependencies": {
