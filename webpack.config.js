@@ -34,7 +34,8 @@ const base_Config = {
     optimization: {
         splitChunks: {
             // include all types of chunks
-            chunks: 'all'
+            // Cause an error after minifying (webpack -p)
+            //  chunks: 'all'
         }
     }
 
