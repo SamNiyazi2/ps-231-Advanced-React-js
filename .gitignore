@@ -3,3 +3,4 @@ dist
 public/bundle.js
 public/bundle_101.js
 coverage/**
+public/*__bundle.js

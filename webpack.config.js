@@ -1,6 +1,8 @@
 
 // 07/20/2020 04:34 pm - SSN - [20200720-1620] - [002] - M03 - Configuring a full-stack JavaScript Environment: Client side
 
+// 08/02/2020 06:31 pm - SSN - [20200802-1815] - [001] - M08-P04 - Separating vendor files
+
 const path = require('path');
 
 const base_Config = {
@@ -26,10 +28,30 @@ const base_Config = {
             }
         ]
     }
+    ,
+
+    //    [20200802-1815]
+    optimization: {
+        splitChunks: {
+            // include all types of chunks
+            chunks: 'all'
+        }
+    }
 
 
 };
 
+
+//    [20200802-1815]
+let vendorFiles = [
+    'babel-polyfill',
+    'react',
+    'react-dom',
+    'prop-types',
+    'axios',
+    'lodash.debounce',
+    'lodash.pickby'
+];
 
 
 const config = [
@@ -39,16 +61,20 @@ const config = [
         ...base_Config
         ,
 
-        entry: [
-            'babel-polyfill',
-            './lib/renderers/dom.js'
-        ]
+        entry: {
+
+            vendor: vendorFiles,
+            app: [
+                './lib/renderers/dom.js'
+            ]
+        }
 
         ,
 
         output: {
             path: path.resolve(__dirname, 'public'),
-            filename: 'bundle.js'
+            // filename: 'bundle.js'
+            filename: '[name]__bundle.js'
 
         }
 
@@ -60,16 +86,22 @@ const config = [
         ...base_Config
         ,
 
-        entry: [
-            'babel-polyfill',
-            './lib/test_context/index.js'
-        ]
+
+        entry: {
+
+            vendor: vendorFiles,
+            app_101: [
+                './lib/test_context/index.js'
+            ]
+        }
+
 
         ,
 
         output: {
             path: path.resolve(__dirname, 'public'),
-            filename: 'bundle_101.js'
+            //            filename: 'bundle_101.js'
+            filename: '[name]__bundle.js'
 
         }
 
