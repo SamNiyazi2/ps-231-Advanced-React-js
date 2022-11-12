@@ -1,4 +1,4 @@
 
 cd %~dp0
 
-code .
+code . %1

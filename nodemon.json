@@ -12,9 +12,13 @@
     "verbose":true,
 
     "watch":[
-        "lib/",
+        "lib",
         "views"
     ],
 
-    "ext":"js.json,ejs"
+    "ext":"js,ejs",
+
+    "events": {
+        "start": "echo %time%  --- ssn-20200722-1429"
+      }
 }

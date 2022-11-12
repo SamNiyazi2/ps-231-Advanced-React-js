@@ -1,19 +1,37 @@
-
-
 <%# 07/20/2020 12:54 pm - SSN - [20200720-0738] - [006] - M03 - Full-stack JavaScript with React.js #%>
 
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
 
     <title>P3114 (3) - Advanced React Application Example</title>
+
+    <script>
+        window.initialData = <%- initialData?JSON.stringify(initialData):"No initial data" -%>;
+    </script>
+    <link rel="stylesheet" href="main.css">
+
 </head>
+
 <body>
 
-    <h2>Hello Express and Ejs (<%= answer %>) (v12)</h2>
-    
+
+    <%#    // 07/21/2020 01:14 pm - SSN - [20200721-1305] - [001] - M03-P10 - Server-side rendering of React component #%>
+    <%# Must not leave space between div tags #%>
+
+    <div class="topMenu">
+        <a href="/test_context">Context work</a>
+    </div>
+
+    <div id="root"><%- initialContent -%></div>
+
+    <script src="/vendor__bundle.js" charset="UTF-8"></script>
+    <script src="/app__bundle.js" charset="UTF-8"></script>
+
 </body>
+
 </html>
