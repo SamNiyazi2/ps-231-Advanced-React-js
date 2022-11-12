@@ -4,3 +4,6 @@ build/**
 coverage/**
 public/bundle.js
 public/bundle_101.js
+public/app__bundle.js
+public/app_101__bundle.js
+public/vendor__bundle.js
